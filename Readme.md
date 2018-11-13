@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Vasily Yakovenko](https://up.htmlacademy.ru/htmlcss/23/user/674677).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
