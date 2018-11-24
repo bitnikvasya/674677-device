@@ -174,7 +174,7 @@
       <section class="contacts">
         <h2 class="about-title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякове бывает.</p>
-        <iframe src="" width="" height=""></iframe>
+        <p><a href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a></p>
         <p><a href="contacts.html">Напишите нам</a></p>
       </section>
     </main>
@@ -207,8 +207,60 @@
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="user-login">Логин</label>
+            <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <p class="login-password-info">
+            <label class="login-checkbox">
+              <input type="checkbox" name="remember">
+              Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+          </p>
+          <button class="button" type="submit">
+            Войти
+          </button>
+        </form>
+      <button class="modal-close" type="button">
+          Закрыть
+        </button>
+    </section>
+    <section class="write-us">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="write-us-item">
+            <label for="write-us-name">Ваше имя:</label>
+            <input id="write-us-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="write-us-item">
+            <label for="write-us-email">Ваш e-mail:</label>
+            <input id="write-us-email" type="email" name="email" value="" placeholder="email@example.com">
+          </p>
+          <p class="write-us-item">
+            <label for="write-us-text">Текст письма:</label>
+            <textarea id="write-us-text" type="email" name="text">В свободной форме</textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+          <button class="modal-close" type="button">
+          Закрыть
+        </button>
+        </form>
+    </section>
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">
+          Как до нас добраться
+        </h2>
+        <p>
+          <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу: ул. Строителей, 15, Москва">
+        </p>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
     </section>
   </body>
 </html>
