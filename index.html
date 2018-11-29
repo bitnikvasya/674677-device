@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Device</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
         <a class="main-header-logo">
-          <img src="img/logo.svg" width="180" height="55" alt="Логотип интернет-магазина Device">
+          <img src="img/logo.png" width="164" height="36" alt="Логотип интернет-магазина Device">
         </a>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="search" action="https://echo.htmlacademy.ru" method="post">
           <input placeholder="Поиск по сайту" type="search">
           <button type="submit"></button>
         </form>
@@ -172,15 +175,15 @@
         <a href="about.html">Подробнее о нас</a>
       </section>
       <section class="contacts">
-        <h2 class="about-title">Контакты</h2>
+        <h2 class="contacts-title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякове бывает.</p>
-        <p><a href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a></p>
+        <a href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
         <p><a href="contacts.html">Напишите нам</a></p>
       </section>
     </main>
     <footer class="main-footer">
         <a class="main-footer-logo">
-          <img src="img/logo-2.svg" width="180" height="55" alt="Логотип интернет-магазина Device">
+          <img src="img/logo-2.png" width="163" height="36" alt="Логотип интернет-магазина Device">
         </a>
         <ul class="footer-user-navigation">
           <li class="footer-login-link"><a href="login-link.html">Войти</a></li>
@@ -195,17 +198,17 @@
         </ul>
         <p>Тел.: +7 (495) 495-95-95</p>
         <p class="line"></p>
-        <ul>
+        <ul class="social">
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
           <li><a class="social-button" href="#">Твиттер</a></li>
         </ul>
         <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
+          <img src="img/logo-html.png" width="27" height="35" alt="Логотип HTML Academy">
         </a>
     </footer>  
     <section class="modal modal-login">
-      <h2>Личный кабинет</h2>
+      <h2 class="visually-hidden">Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
           <p>
@@ -243,13 +246,13 @@
           </p>
           <p class="write-us-item">
             <label for="write-us-text">Текст письма:</label>
-            <textarea id="write-us-text" type="email" name="text">В свободной форме</textarea>
+            <textarea id="write-us-text" type="email" name="text" placeholder="В свободной форме"></textarea>
           </p>
           <button class="button" type="submit">Отправить</button>
-          <button class="modal-close" type="button">
+      </form>
+        <button class="modal-close" type="button">
           Закрыть
         </button>
-        </form>
     </section>
     <section class="modal modal-map">
         <h2 class="visually-hidden">

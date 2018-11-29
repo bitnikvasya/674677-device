@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Device</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -41,7 +44,7 @@
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
-        <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
+        <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
       <section class="filters">
         <h2 class="filters-title">Фильтр:</h2>
@@ -92,64 +95,57 @@
         </form>
       </section>
       <section class="catalog">
-        <span>Сортировка:</span>
-        <ul class="sorting">
-          <li class="sorting-button"><a href="#">По цене</a></li>
-          <li class="sorting-button"><a href="#">По типу</a></li>
-          <li class="sorting-button"><a href="#">По популярности</a></li>
+        <div class="sort">
+          <span>Сортировка:</span>
+          <ul class="sorting">
+            <li class="sorting-button"><a href="#">По цене</a></li>
+            <li class="sorting-button"><a href="#">По типу</a></li>
+            <li class="sorting-button"><a href="#">По популярности</a></li>
           </ul>
-        </ul>
+        </div>
         <h2 class="visually-hidden">Список моноподов для селфи</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
+            <a href="catalog-item.html">
+                <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+            </a>
             <h3>
               <a href="catalog-item.html">Любительская селфи-палка</a>
             </h3>
-            <p>
-              <a href="catalog-item.html">
-                <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-              </a>
-            </p>
-              <p class="catalog-item-price">
+            <p class="catalog-item-price">
               <b>500 руб.</b>
             </p>
           </li>
           <li class="catalog-item">
+            <a href="catalog-item.html">
+                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+            </a>
             <h3>
               <a href="catalog-item.html">Профессиональная селфи-палка</a>
             </h3>
-            <p>
-              <a href="catalog-item.html">
-                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-              </a>
-            </p>
-              <p class="catalog-item-price">
+            <p class="catalog-item-price">
               <b>1 500 руб.</b>
             </p>
           </li>
           <li class="catalog-item">
+            <a href="catalog-item.html">
+                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+            </a>
             <h3>
               <a href="catalog-item.html">Непотопляемая селфи-палка</a>
             </h3>
-            <p>
-              <a href="catalog-item.html">
-                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-              </a>
-            </p>
-              <p class="catalog-item-price">
+            <p class="catalog-item-price">
               <b>2 500 руб.</b>
             </p>
           </li>
           <li class="catalog-item">
+            <a href="catalog-item.html">
+                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+            </a>
             <h3>
               <a href="catalog-item.html">Селфи-палка «Следуй за мной»</a>
             </h3>
-            <p>
-              <a href="catalog-item.html">
-                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-              </a>
-            </p>
-              <p class="catalog-item-price">
+            <p class="catalog-item-price">
               <b>4 900 руб.</b>
             </p>
           </li>
@@ -160,7 +156,7 @@
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">4</a></li>
-          <li class="pagination-back"><a href="#">Вперед</a></li>
+          <li class="pagination-forward"><a href="#">Вперед</a></li>
         </ul>
       </section>
     </main>
