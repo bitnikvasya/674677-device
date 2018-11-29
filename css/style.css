@@ -12,7 +12,15 @@ url('../fonts/Gilroyextrabold.woff2') format('woff2'),
 url('../fonts/Gilroyextrabold.woff') format('woff');
 font-weight: 800; 
 font-style: normal; 
-} 
+}
+
+@font-face { 
+font-family: 'Open Sans'; 
+url('../fonts/opensanslight.woff2') format('woff2'), 
+url('../fonts/opensanslight.woff') format('woff');
+font-weight: 300; 
+font-style: normal; 
+}
 
 body {
   margin: 0;
