@@ -8,9 +8,12 @@
   </head>
   <body>
     <header class="main-header">
-        <a class="main-header-logo">
-          <img src="img/logo.png" width="164" height="36" alt="Логотип интернет-магазина Device">
-        </a>
+    	<div class="header-wrapper">
+      <a class="main-header-logo">
+        <img src="img/logo.png" width="164" height="36" alt="Логотип интернет-магазина Device">
+      </a>
+      
+      <div class="top-header-wrapper">
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
           <input placeholder="Поиск по сайту" type="search">
           <button type="submit"></button>
@@ -20,6 +23,7 @@
           <li class="match"><a href="match.html">Сравнить</a></li>
           <li class="basket"><a href="basket.html">Корзина</a></li>
         </ul>
+      </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a>
@@ -37,10 +41,12 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
+    	</div>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Интернет-магазин Device</h1>
       <section class="slider">
+      	<div class="description">
       	<h2 class="slider-title">Делай селфи, как Бен Стиллер!</h2>
       	<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
       	<a href="catalog-item.html">Подробнее</a>
@@ -56,9 +62,11 @@
             <td>Карбон</td>
           </tr>
         </table>
+      	</div>
         <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
       </section>
       <section class="slider">
+      	<div class="description">
       	<h2 class="slider-title">Худеем правильно!</h2>
       	<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диеты.</p>
       	<a href="catalog-item.html">Подробнее</a>
@@ -70,9 +78,11 @@
             <td>48 часов</td>
           </tr>
         </table>
+      </div>
         <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
       </section>
       <section class="slider">
+      	<div class="description">
       	<h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
       	<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
       	<a href="catalog-item.html">Подробнее</a>
@@ -86,6 +96,7 @@
             <td>50 м</td>
           </tr>
         </table>
+      </div>
         <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
       </section>
       <section class="popular">
@@ -162,6 +173,7 @@
       	<li><a href="#"><img src="img/logo-3.jpg" width="260" height="100" alt="Go Pro"></a></li>
       	<li><a href="#"><img src="img/logo-4.jpg" width="260" height="100" alt="Vive"></a></li>
       </ul>
+      <div class="about-contacts">
       <section class="about">
         <h2 class="about-title">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -179,8 +191,11 @@
         <a href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
         <p><a href="contacts.html">Напишите нам</a></p>
       </section>
+    </div>
     </main>
     <footer class="main-footer">
+    	<div class="footer-wrapper">
+    	<div class="top-footer">
         <a class="main-footer-logo">
           <img src="img/logo-2.png" width="164" height="36" alt="Логотип интернет-магазина Device">
         </a>
@@ -189,6 +204,8 @@
           <li class="footer-match"><a href="match.html">Сравнить</a></li>
           <li class="footer-basket"><a href="basket.html">Корзина</a></li>
         </ul>
+      </div>
+      <div class="middle-footer">
         <p>г. Москва, ул. Строителей, 15</p>
         <ul class="footer-site-navigation">
           <li><a href="delivery.html">Доставка</a></li>
@@ -196,6 +213,8 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <p>Тел.: +7 (495) 495-95-95</p>
+      </div>
+      <div class="bottom-footer">
         <p class="line"></p>
         <ul class="social">
           <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -205,6 +224,8 @@
         <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-html.png" width="27" height="35" alt="Логотип HTML Academy">
         </a>
+      </div>
+    </div>
     </footer>  
     <section class="modal modal-login">
       <h2 class="visually-hidden">Личный кабинет</h2>

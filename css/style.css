@@ -458,3 +458,226 @@ ul {
 .pagination-forward {
 
 }
+
+/* 
+body {
+  background-image: url('../img/device-index.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+} 
+*/
+
+.main-header {
+  display: flex;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 1160px;
+  
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 1040px;
+}
+
+.main-header-logo {
+
+  width: 164px;
+  height: 36px;
+  margin-top: -60px;
+  margin-bottom: 35px; 
+}
+
+.top-header-wrapper {
+  display: flex;
+  margin-bottom: 50px;
+  
+}
+
+.site-navigation {
+  display: flex;
+}
+
+
+.search {
+  margin: 0;
+  padding: 0;
+  width: 540px;
+}
+
+.user-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.catalog {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.slider {
+  display: flex;
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
+  flex-direction: row-reverse;
+  padding-bottom: 115px;
+}
+
+.popular-list {
+  display: flex;
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
+  justify-content: space-between;
+}
+
+.services {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
+}
+
+.service-list {
+  margin: 0;
+  padding: 0;
+}
+
+.brand-logos {
+  display: flex;
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
+  justify-content: space-between;
+}
+
+.about-contacts {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
+}
+
+.main-footer {
+  background-color: #464646; 
+}
+
+.footer-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
+  padding: 66px 0;
+  
+  color: #ffffff;
+}
+
+.footer-user-navigation,
+.footer-site-navigation,
+.social {
+  margin: 0;
+  padding: 0;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+
+.page-header {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.page-title {
+  margin-bottom: 25px;
+  margin-left: 60px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 60px;
+}
+
+.catalog-columns {
+  display: flex;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filters-wrapper {
+  width: 328px;
+}
+
+.catalog {
+  margin-left: 72px;
+}
+
+.sorting {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+}
+
+.catalog-item {
+  margin-right: 40px;
+  
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 76px;
+}
+
+.catalog-list {
+  margin-bottom: 35px;
+}
