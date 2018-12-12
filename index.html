@@ -178,13 +178,17 @@
       </section>
 
       <section class="services">
+      	
       	<div class="services-wrap">
+      		<input class="visually-hidden" type="radio" id="service-1" name="services" checked>
+        	<input class="visually-hidden" type="radio" id="service-2" name="services">
+        	<input class="visually-hidden" type="radio" id="service-3" name="services">
       	<ul class="service-list">
-      	  <li class="services-button"><a href="#">Доставка</a></li>
-          <li class="services-button"><a href="#">Гарантия</a></li>
-          <li class="services-button"><a href="#">Кредит</a></li>
+      	  <li><label class="services-button slider-controls-item-1" for="service-1">Доставка</label></li>
+          <li><label class="services-button slider-controls-item-2" for="service-2">Гарантия</label></li>
+          <li><label class="services-button slider-controls-item-3" for="service-3">Кредит</label></li>
         </ul>
-        <!--
+        <div class="services-list">
         <div class="services-item">
         	<div class="services-description">
           <h2>Доставка</h2>
@@ -194,7 +198,7 @@
         </div>
           <img src="img/delivery.svg" width="136" height="164" alt="Доставка">
         </div>
-        -->
+        
         <div class="services-item">
         	<div class="services-description">
           <h2>Гарантия</h2>
@@ -204,7 +208,7 @@
         </div>
           <img src="img/warranty.svg" width="171" height="194" alt="Гарантия">
         </div>
-        <!--
+        
         <div class="services-item">
         	<div class="services-description">
           <h2>Кредит</h2>
@@ -214,7 +218,7 @@
         </div>
           <img src="img/credit.svg" width="156" height="186" alt="Кредит">
         </div>
-      	-->
+      	</div>
     </div>
       </section>
 

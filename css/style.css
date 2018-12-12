@@ -1173,12 +1173,14 @@ body {
   padding: 0;
   width: 280px;
   margin-top: 77px;
-  outline: 1px dashed lightgrey;
+  
 }
 
 .service-list li {
   margin-bottom: 20px;
 }
+
+
 
 .service-list:after {
   content: "";
@@ -1195,6 +1197,7 @@ body {
   position: relative;
   width: 160px;
   padding: 10px 0;
+  
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -1206,6 +1209,7 @@ body {
   text-decoration: none;
   z-index: 0;
   
+  
 }
 
 .services-button:before {
@@ -1215,47 +1219,49 @@ body {
   height: 8px;
   background: #f0c52e;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.2s linear;
+  left: 0;
+  transform: translateY(-50%);
   z-index: -1;
-  margin-right: auto;
+  transition: all 0.2s linear;
+  
+  z-index: -1;
 }
 
 .services-button:hover:before,
 .services-button:focus:before {
-  content: "";
-  position: absolute;
-  width: 160px;
+  
   height: 40px;
-  background: #f0c52e;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   
-
-  
-}
-
-.services-button:active {
-  
-  color: rgba(240,197,46,0.5);
-  z-index: 0;
 }
 
 .services-button:active:before {
-  z-index: -1;
+  width: 280px;
   background: #000000;
-  width: 260px;
-  margin-right: auto;
 }
 
+.services-button:active {
+  color: #f7e296;
+}
+
+
 .services-item {
-  display: flex;
+  display: none;
   
   margin-top: 33px;
   width: 820px;
   
+}
+
+#service-1:checked ~ .services-list .services-item:nth-child(1) {
+  display: flex;
+}
+
+#service-2:checked ~ .services-list .services-item:nth-child(2) {
+  display: flex;
+}
+
+#service-3:checked ~ .services-list .services-item:nth-child(3) {
+  display: flex;
 }
 
 .services-description {
