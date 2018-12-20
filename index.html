@@ -243,8 +243,8 @@
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякове бывает.</p>
-        <a href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
-        <p><a href="contacts.html">Напишите нам</a></p>
+        <a class="map-open" href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
+        <p><a class="write-us-open" href="contacts.html">Напишите нам</a></p>
       </section>
     </div>
     </main>
@@ -332,6 +332,7 @@
     </section>
     <section class="modal write-us">
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      	<div class="write-us-wrapper">
           <p class="write-us-item">
             <label for="write-us-name">Ваше имя:</label>
             <input id="write-us-name" type="text" name="name" value="" placeholder="Имя Фамилия">
@@ -342,9 +343,10 @@
           </p>
           <p class="write-us-item">
             <label for="write-us-text">Текст письма:</label>
-            <textarea id="write-us-text" type="email" name="text" placeholder="В свободной форме"></textarea>
+            <textarea id="write-us-text" type="text" name="text" placeholder="В свободной форме"></textarea>
           </p>
-          <button class="button" type="submit">Отправить</button>
+        </div>
+          <button class="write-us-button button" type="submit">Отправить</button>
       </form>
         <button class="modal-close" type="button">
           Закрыть
@@ -354,12 +356,59 @@
         <h2 class="visually-hidden">
           Как до нас добраться
         </h2>
-        <p>
-          <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу: ул. Строителей, 15, Москва">
-        </p>
+        
+        	<iframe src="https://yandex.ru/map-widget/v1/-/CBF3qMElhC" width="960" height="570" frameborder="1" allowfullscreen="true"></iframe>
+        
         <button class="modal-close" type="button">
           Закрыть
         </button>
     </section>
+    <script>
+  		var link = document.querySelector(".write-us-open");
+  		var popup = document.querySelector(".write-us");
+  		var close = popup.querySelector(".modal-close");
+
+  		link.addEventListener("click", function (evt) {
+    	evt.preventDefault();
+    	popup.classList.add("modal-show");
+  		});
+
+  		close.addEventListener("click", function (evt) {
+    	evt.preventDefault();
+    	popup.classList.remove("modal-show");
+  		});
+
+  		window.addEventListener("keydown", function (evt) {
+    	evt.preventDefault();
+    	if (evt.keyCode === 27) {
+      if (popup.classList.contains("modal-show")) {
+      popup.classList.remove("modal-show");
+      }
+    }
+  });
+
+  		var mapLink = document.querySelector(".map-open");
+  		var mapPopup = document.querySelector(".modal-map");
+  		var mapClose = mapPopup.querySelector(".modal-close");
+
+  		mapLink.addEventListener("click", function (evt) {
+    	evt.preventDefault();
+    	mapPopup.classList.add("modal-show");
+  		});
+
+  		mapClose.addEventListener("click", function (evt) {
+    	evt.preventDefault();
+    	mapPopup.classList.remove("modal-show");
+  		});
+
+  		window.addEventListener("keydown", function (evt) {
+    	evt.preventDefault();
+    	if (evt.keyCode === 27) {
+      if (mapPopup.classList.contains("modal-show")) {
+      mapPopup.classList.remove("modal-show");
+      }
+    }
+  });
+		</script>
   </body>
 </html>
